@@ -1,5 +1,5 @@
 import axios from "axios";
-const API = axios.create({ baseURL: "http://localhost:8080/api/guestbook" });
+const API = axios.create({ baseURL: "/api/guestbook" });
 
 export type Entry = { id: number; nickname: string; message: string; createdAt: string; likeCount: number };
 export type Page<T> = { items: T[]; nextCursor: number | null };
